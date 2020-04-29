@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md">
+      <a class="navbar-brand" href="#">Logo</a>
+      <button
+        class="navbar-toggler navbar-dark"
+        type="button"
+        data-toggle="collapse"
+        data-target="#main-navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="main-navigation">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./auth.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="modal" href="#myModal">Basket</a>
+            <!-- <a class="nav-link" href="#">Basket</a> -->
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h5 class="modal-title">Ваша козина пуста</h5>
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            Modal body..
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h1>Регистрация</h1>
+      <br />
+      <div>
+        <button type="button" class="btn btn-primary">ЧАСТНЫЙ КЛИЕНТ</button>
+        <button type="button" class="btn btn-outline-secondary">
+          ПРЕДПРИЯТИЕ (всех форм)
+        </button>
+      </div>
+      <br />
+      <p>
+        Вы планируете приобретать товары для личных потребностей,
+        непосредственно не связанных с предпринимательской деятельностью либо
+        выполнением обязанностей наемного работника. Взаимоотношения между вами
+        и нашей компанией будут регламентироваться Законом Украины «О защите
+        прав потребителей» и договором купли-продажи.
+      </p>
+
+      <form>
+        <div class="row">
+          <div class="col col-md">
+            <div class="form-group">
+              <label for="surname">Фамилия:</label>
+              <input type="text" class="form-control" id="surname" />
+            </div>
+          </div>
+
+          <div class="col col-md">
+            <div class="form-group">
+              <label for="name">Имя:</label>
+              <input type="text" class="form-control" id="name" />
+            </div>
+          </div>
+
+          <div class="col col-md">
+            <div class="form-group">
+              <label for="middle-name">Отчество:</label>
+              <input type="text" class="form-control" id="middle-name" />Если
+              желаете, чтобы к Вам обращались только по имени, оставьте поле
+              пустым
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <div class="form-group">
+              <label for="phone">Телефон:</label>
+              <input type="text" class="form-control" id="phone" />
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-group">
+              <label for="phone">Email:</label>
+              <input type="text" class="form-control" id="email" />
+            </div>
+          </div>
+          <div class="col"></div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <div class="form-group">
+              <label for="pwd">Пароль:</label>
+              <input type="password" class="form-control" id="pwd" />
+            </div>
+          </div>
+
+          <div class="col">
+            <label for="pwd1">Повторите пароль:</label>
+            <input type="password" class="form-control" id="pwd1" />
+          </div>
+          <div class="col"></div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <div class="form-group">
+              <label for="selectcity">Укажите населенный пункт:</label>
+              <select class="form-control" id="selectcity" name="sellist1">
+                <option>Киев</option>
+                <option>Одесса</option>
+                <option>Харьков</option>
+                <option>Днепро</option>
+              </select>
+
+              <div class="form-check-inline">
+                <label class="form-check-label">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    value=""
+                  />Согласен с условиями публичной оферты
+                </label>
+              </div>
+
+              <div class="form-check-inline">
+                <label class="form-check-label">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    value=""
+                  />Разрешаю использовать свои персональные данные и присылать
+                  мне сообщения персонального характера
+                </label>
+              </div>
+            </div>
+            <button type="button" class="btn btn-primary btn-block">
+              ЗАРЕГИСТРИРОВАТЬСЯ
+            </button>
+          </div>
+
+          <div class="col"></div>
+
+          <div class="col"></div>
+        </div>
+      </form>
+    </div>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

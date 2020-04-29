@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/main.css" />
     <title>Document</title>
   </head>
+
   <body>
     <nav class="navbar navbar-expand-md">
       <a class="navbar-brand" href="#">Logo</a>
@@ -64,75 +65,81 @@
       </div>
     </div>
 
-    <div class="container">
-      <h1>Регистрация</h1>
-      <br />
-      <div>
-        <button type="button" class="btn btn-primary">ЧАСТНЫЙ КЛИЕНТ</button>
-        <button type="button" class="btn btn-outline-secondary">
-          ПРЕДПРИЯТИЕ (всех форм)
-        </button>
-      </div>
-      <br />
-      <p>
-        Вы планируете приобретать товары для личных потребностей,
-        непосредственно не связанных с предпринимательской деятельностью либо
-        выполнением обязанностей наемного работника. Взаимоотношения между вами
-        и нашей компанией будут регламентироваться Законом Украины «О защите
-        прав потребителей» и договором купли-продажи.
-      </p>
+    <!-- END MAIN MENU -->
 
-      <form>
+    <div class="registration-content container">
+      <div class="registration-header">
+        <h1>Регистрация</h1>
+        <br />
+        <div>
+          <button type="button" class="btn btn-primary">ЧАСТНЫЙ КЛИЕНТ</button>
+          <button type="button" class="btn btn-outline-secondary">
+            ПРЕДПРИЯТИЕ (всех форм)
+          </button>
+        </div>
+        <br />
+        <p>
+          Вы планируете приобретать товары для личных потребностей,
+          непосредственно не связанных с предпринимательской деятельностью либо
+          выполнением обязанностей наемного работника. Взаимоотношения между
+          вами и нашей компанией будут регламентироваться Законом Украины «О
+          защите прав потребителей» и договором купли-продажи.
+        </p>
+      </div>
+
+      <form id="registration">
         <div class="row">
-          <div class="col col-md">
+          <div class="col-lg-4 col-md-12">
             <div class="form-group">
               <label for="surname">Фамилия:</label>
               <input type="text" class="form-control" id="surname" />
             </div>
           </div>
 
-          <div class="col col-md">
+          <div class="col-lg-4 col-md-12">
             <div class="form-group">
               <label for="name">Имя:</label>
               <input type="text" class="form-control" id="name" />
             </div>
           </div>
 
-          <div class="col col-md">
+          <div class="col-lg-4 col-md-12">
             <div class="form-group">
               <label for="middle-name">Отчество:</label>
-              <input type="text" class="form-control" id="middle-name" />Если
-              желаете, чтобы к Вам обращались только по имени, оставьте поле
-              пустым
+              <input type="text" class="form-control" id="middle-name" />
+              <p>
+                Если желаете, чтобы к Вам обращались только по имени, оставьте
+                поле пустым
+              </p>
             </div>
           </div>
         </div>
 
         <div class="row">
-          <div class="col">
+          <div class="col-lg-4 col-md-12">
             <div class="form-group">
               <label for="phone">Телефон:</label>
               <input type="text" class="form-control" id="phone" />
             </div>
           </div>
-          <div class="col">
+          <div class="col-lg-4 col-md-12">
             <div class="form-group">
               <label for="phone">Email:</label>
               <input type="text" class="form-control" id="email" />
             </div>
           </div>
-          <div class="col"></div>
+          <div class="col-lg-4 col-md-12"></div>
         </div>
 
         <div class="row">
-          <div class="col">
+          <div class="col-lg-4 col-md-12">
             <div class="form-group">
               <label for="pwd">Пароль:</label>
               <input type="password" class="form-control" id="pwd" />
             </div>
           </div>
 
-          <div class="col">
+          <div class="col-lg-4 col-md-12">
             <label for="pwd1">Повторите пароль:</label>
             <input type="password" class="form-control" id="pwd1" />
           </div>
@@ -140,7 +147,7 @@
         </div>
 
         <div class="row">
-          <div class="col">
+          <div class="col-lg-4 col-md-12">
             <div class="form-group">
               <label for="selectcity">Укажите населенный пункт:</label>
               <select class="form-control" id="selectcity" name="sellist1">
@@ -152,22 +159,19 @@
 
               <div class="form-check-inline">
                 <label class="form-check-label">
-                  <input
-                    type="checkbox"
-                    class="form-check-input"
-                    value=""
-                  />Согласен с условиями публичной оферты
+                  <input type="checkbox" class="form-check-input" value="" />
+                  <span>Согласен с условиями </span>
+                  <a href="">Публичной оферты</a>
                 </label>
               </div>
 
               <div class="form-check-inline">
                 <label class="form-check-label">
-                  <input
-                    type="checkbox"
-                    class="form-check-input"
-                    value=""
-                  />Разрешаю использовать свои персональные данные и присылать
-                  мне сообщения персонального характера
+                  <input type="checkbox" class="form-check-input" value="" />
+                  <a href="">Разрешаю использовать свои персональные данные</a>
+                  <span>
+                    и присылать мне сообщения персонального характера</span
+                  >
                 </label>
               </div>
             </div>
